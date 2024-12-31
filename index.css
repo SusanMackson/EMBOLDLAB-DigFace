@@ -13,8 +13,8 @@ html {
 
 /* LOGO STYLING */
 .logo {
-    height: 150px;
-    padding-bottom: 0px;
+    height: 100px;
+    padding-bottom: 20px;
     margin: -15px;
     padding-left: 60px;
 
@@ -27,8 +27,8 @@ nav ul {
     justify-content: end;
     list-style: none;
     gap: 35px;
-    padding: 35px;
-    margin-left: 220px;
+    padding: 28px;
+    margin-left: 200px;
 }
 
 nav {
