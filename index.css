@@ -15,7 +15,7 @@ html {
 .logo {
     height: 150px;
     padding-bottom: 0px;
-    margin: -20px;
+    margin: -15px;
     padding-left: 60px;
 
 }
@@ -26,8 +26,8 @@ nav ul {
     display: flex;
     justify-content: end;
     list-style: none;
-    gap: 30px;
-    padding: 30px;
+    gap: 35px;
+    padding: 35px;
     margin-left: 220px;
 }
 
@@ -38,7 +38,7 @@ nav ul li a {
     text-decoration: none;
     color: white;
     transition: color 0.3;
-    font-size: 1.3rem;
+    font-size: 1rem;
     font-family: 'Calibri';
     font-weight: 700;
 }
