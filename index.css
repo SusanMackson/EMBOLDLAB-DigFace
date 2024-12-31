@@ -4,19 +4,22 @@ html {
 
 /* HEADER STYLING */
 .header {
+    height: 80px;
     display: flex;
     justify-content: left;
     align-items: end;
-    padding: 0px;
+    padding: 5px;
     background: linear-gradient(175deg, #000066, #ff6633);
+    
 }
 
 /* LOGO STYLING */
 .logo {
-    height: 100px;
+    height: 180px;
     padding-bottom: 20px;
     margin: -15px;
     padding-left: 60px;
+    margin-bottom: -65px;
 
 }
 
@@ -27,7 +30,7 @@ nav ul {
     justify-content: end;
     list-style: none;
     gap: 35px;
-    padding: 28px;
+    padding: 18px;
     margin-left: 200px;
 }
 
