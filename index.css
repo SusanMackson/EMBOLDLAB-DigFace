@@ -23,6 +23,13 @@ html {
 
 }
 
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
 /* NAVIGATION STYLING */
 
 nav ul {
@@ -36,11 +43,12 @@ nav ul {
 
 nav {
     padding-left: 35%;
+    
 }
 nav ul li a {
     text-decoration: none;
     color: white;
-    transition: color 0.3;
+    transition: color 0.3 ease;
     font-size: 1rem;
     font-family: 'Calibri';
     font-weight: 700;
@@ -50,11 +58,21 @@ nav ul li a:hover {
     color: #000066;
 }
 
+/* HERO STYLING */
+.hero-right-container {
+    width: 100%;
+    height: auto;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    
+}
 
 /* FOOTER STYLING */
 
 .footer {
     display: flex;
+    text-align: center;
     justify-content: left;
     align-items: end;
     padding: 0px;
@@ -63,6 +81,7 @@ nav ul li a:hover {
 
 .footer-column {
     color: white;
+    padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
