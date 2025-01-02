@@ -19,6 +19,7 @@ html {
     justify-content: left;
     align-items: end;
     padding: 5px;
+    width: 100%;
     background: linear-gradient(175deg, #000066, #ff6633);
     
 }
@@ -90,6 +91,7 @@ nav ul li a:hover {
     flex-wrap: wrap; 
     width: 80%; 
     padding: 20px;
+    width: 100%;
 }
 
 .who-we-are-container-content {
@@ -99,39 +101,67 @@ nav ul li a:hover {
 }
 
 /* OUR SERVI STYLING */
+.our-services-container{
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+
 .our-services-flex-container {
     background-color: #ffffff;
-    margin: 10px;
-    padding: 100px;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 40px;
     display: flex;
-    justify-content: space-around; 
+    justify-content: center;
     align-items: center; 
-    width: 90%;    
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;    
+
+}
+
+.flex-item h3 {
+    font-weight: 800;
+}
+
+.flex-item p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.flex-item1 h3 {
+    font-weight: 800;
+    line-height: none;
+}
+
+.flex-item1 p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.flex-item {
+    background-color: #f7f7f7;
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
 }
 
 .flex-item1 {
-    background-color: #f7f7f7;
-    padding: 100px;
-    margin: 10px;
-}
-
-.flex-item2 {
     background: linear-gradient(150deg, #FCDCD2, white);
-    padding: 100px;
-    margin: 10px;
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    margin: 0px;
+    text-align: center;
 }
-
-.flex-item3 {
-    background-color: #f7f7f7;
-    padding: 100px;
-    margin: 10px;
-}
-
 
 /* FOOTER STYLING */
 
-.footer {
+.footer{
     display: flex;
     text-align: center;
     justify-content: left;
@@ -139,6 +169,7 @@ nav ul li a:hover {
     padding: 0px;
     background: linear-gradient(175deg, #000066, #ff6633);
 }
+    
 
 .footer-column {
     color: white;
