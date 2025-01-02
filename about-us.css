@@ -1,7 +1,9 @@
-#about-us {
+ .about-container {
   padding: 50px;
   background-color: #f9f9f9;
+  background-image: photo_2025-01-02_11-08-38;
   font-family: Arial, sans-serif;
+  padding: 100px;
 }
 .about-container {
   max-width: 800px;
@@ -17,4 +19,35 @@
   font-size: 1rem;
   color: #000066;
   margin: 20px 0;
+}
+.about-container .img{
+  margin-right: 15px;
+  margin-left: 15px;
+}
+#about-us {
+  background-color: #f4f4f4;
+  padding: 40px 0;
+}
+/* .about-container .h2{
+  
+  background-repeat: no-repeat;
+  width: 500px;
+  height: 500px;
+  background-size: cover;
+} */
+.abt-us{
+    padding-bottom: 20px;
+}
+.text{
+    background-image: url(images/istockphoto-2032406889-612x612.jpg);
+    background-color: #000066;
+    padding: 200px;
+    color:#f4f4f4;
+}
+.image{
+    top: 0;
+    left: 0;
+    margin-left: 50px;
+    display: flex;
+    
 }
