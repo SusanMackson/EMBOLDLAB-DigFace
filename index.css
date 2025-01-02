@@ -89,8 +89,7 @@ nav ul li a:hover {
     justify-content: space-around; 
     align-items: center; 
     flex-wrap: wrap; 
-    width: 80%; 
-    padding: 20px;
+    padding: 80px;
     width: 100%;
 }
 
@@ -98,6 +97,30 @@ nav ul li a:hover {
     text-align: center;
     margin: 20px;
     font-size: 1.5rem;
+}
+
+.who-we-are-right-container {
+    font-weight: 900;
+}
+.who-we-are-btn{
+    display: inline-block;
+    margin-top: 10px;
+    padding: 8px;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.number-border {
+    font-size: 50px;
+    font-weight: bold;
+    color: #000066;
+    border: 3px solid #ff6633;
+    padding: 10px;
+    border-radius: 10px;
 }
 
 /* OUR SERVI STYLING */
@@ -146,7 +169,7 @@ nav ul li a:hover {
     height: 250px;
     width: 250px;
     padding: 30px;
-    margin: 0px;
+    margin: 5px;
     text-align: center;
 }
 
@@ -155,8 +178,22 @@ nav ul li a:hover {
     height: 250px;
     width: 250px;
     padding: 30px;
-    margin: 0px;
+    margin: 5px;
     text-align: center;
+}
+
+.our-services-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 10px;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 72%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
 
 /* FOOTER STYLING */
@@ -175,10 +212,12 @@ nav ul li a:hover {
     color: white;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
 }
 
 .footer-bottom {
     text-align: center;
+    font-size: 10px;
 }
 
 ul {
@@ -195,7 +234,6 @@ ul li a {
     align-items: center; 
     width: 80%; 
     padding: 20px;
-    
     margin: -15px;
     padding-left: 60px;
     
