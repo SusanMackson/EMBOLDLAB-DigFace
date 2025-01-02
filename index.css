@@ -114,15 +114,29 @@ nav ul li a:hover {
     transition: background-color 0.3s ease;
 }
 
-.number-border {
-    font-size: 50px;
-    font-weight: bold;
-    color: #000066;
-    border: 3px solid #ff6633;
-    padding: 10px;
-    border-radius: 10px;
+
+.same-line{
+    display: flex;
+    gap: 0px;
+    align-items: center;
 }
 
+.same-line p {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.same-line h3 {
+    margin: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
 /* OUR SERVI STYLING */
 .our-services-container{
     text-align: center;
@@ -204,6 +218,7 @@ nav ul li a:hover {
     justify-content: left;
     align-items: end;
     padding: 0px;
+    height: 250px;
     background: linear-gradient(175deg, #000066, #ff6633);
 }
     
@@ -213,6 +228,21 @@ nav ul li a:hover {
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    
+}
+.footer-column1 {
+    color: white;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+.footer-column2 {
+    color: white;
+    padding-left: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    line-height: 1;
 }
 
 .footer-bottom {
@@ -222,10 +252,14 @@ nav ul li a:hover {
 
 ul {
     list-style: none;
+    padding-left: 0px;
+    line-height: 1.5;
 }
 
 ul li a {
     color: white;
+    text-decoration: none;
+    
 }
 
 .footer-container {
@@ -238,10 +272,6 @@ ul li a {
     padding-left: 60px;
     
     
-}
-
-.footer-column {
-    text-align: justify;
 }
 
 .footer-column h3 {
