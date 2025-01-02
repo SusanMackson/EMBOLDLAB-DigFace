@@ -1,6 +1,6 @@
 /* General styling */
 body {
-    font-family: 'arial';
+    font-family: arial, sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -69,14 +69,17 @@ nav ul li a:hover {
 }
 
 /* HERO STYLING */
-.hero-right-container {
-    width: 100%;
-    height: auto;
+.hero-content-container {
+    padding: 50px;
+    background-image: url(images/hero-image.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    
+    background-position: center;
+    height: 100vh;
+    width: 100%;
 }
+
+
 
 /*WHO WE ARE STYLING*/
 .who-we-are-container {
@@ -98,33 +101,34 @@ nav ul li a:hover {
 /* OUR SERVI STYLING */
 .our-services-flex-container {
     background-color: #ffffff;
-    padding: 50px;
-    margin: 50px;
-    display: flex; 
+    margin: 10px;
+    padding: 100px;
+    display: flex;
     justify-content: space-around; 
     align-items: center; 
-    flex-wrap: wrap; 
     width: 90%;    
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .flex-item1 {
     background-color: #f7f7f7;
-    padding: 50px;
-    margin: 20px;
+    padding: 100px;
+    margin: 10px;
 }
 
 .flex-item2 {
-    background: linear-gradient( #FCDCD2, white);
-    padding: 50px;
-    margin: 20px;
+    background: linear-gradient(150deg, #FCDCD2, white);
+    padding: 100px;
+    margin: 10px;
 }
 
 .flex-item3 {
     background-color: #f7f7f7;
-    padding: 50px;
-    margin: 20px;
+    padding: 100px;
+    margin: 10px;
 }
+
+
 /* FOOTER STYLING */
 
 .footer {
