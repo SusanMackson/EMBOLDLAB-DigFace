@@ -1,3 +1,13 @@
+/* General styling */
+body {
+    font-family: 'arial';
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: #000066;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -68,6 +78,53 @@ nav ul li a:hover {
     
 }
 
+/*WHO WE ARE STYLING*/
+.who-we-are-container {
+    background-color: #f7f7f7;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    width: 80%; 
+    padding: 20px;
+}
+
+.who-we-are-container-content {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+/* OUR SERVI STYLING */
+.our-services-flex-container {
+    background-color: #ffffff;
+    padding: 50px;
+    margin: 50px;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    width: 90%;    
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.flex-item1 {
+    background-color: #f7f7f7;
+    padding: 50px;
+    margin: 20px;
+}
+
+.flex-item2 {
+    background: linear-gradient( #FCDCD2, white);
+    padding: 50px;
+    margin: 20px;
+}
+
+.flex-item3 {
+    background-color: #f7f7f7;
+    padding: 50px;
+    margin: 20px;
+}
 /* FOOTER STYLING */
 
 .footer {
@@ -95,4 +152,25 @@ ul {
 
 ul li a {
     color: white;
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+    padding: 20px;
+    
+    margin: -15px;
+    padding-left: 60px;
+    
+    
+}
+
+.footer-column {
+    text-align: justify;
+}
+
+.footer-column h3 {
+    text-align: center;
 }
