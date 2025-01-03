@@ -76,7 +76,7 @@ nav ul li a:hover {
     margin: 10px;
 }
 
-ul li {
+.privacy-policy ul li {
     list-style-type: circle;
     margin: 10px;
     margin-left: 50px;
