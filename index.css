@@ -1,3 +1,13 @@
+/* General styling */
+body {
+    font-family: arial, sans-serif;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white;
+    color: #000066;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -9,6 +19,7 @@ html {
     justify-content: left;
     align-items: end;
     padding: 5px;
+    width: auto;
     background: linear-gradient(175deg, #000066, #ff6633);
     
 }
@@ -59,40 +70,217 @@ nav ul li a:hover {
 }
 
 /* HERO STYLING */
-.hero-right-container {
-    width: 100%;
-    height: auto;
+.hero-content-container {
+    padding: 50px;
+    background-image: url(images/hero-image.webp);
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center center;
-    
+    background-position: center;
+    position: relative;
+    height: 100vh;
+    width: auto;
+}
+
+
+
+/*WHO WE ARE STYLING*/
+.who-we-are-container {
+    background-color: #f7f7f7;
+    display: flex; 
+    justify-content: space-around; 
+    align-items: center; 
+    flex-wrap: wrap; 
+    padding: 30px;
+    width: auto;
+}
+
+.who-we-are-container-content {
+    text-align: center;
+    margin: 20px;
+    font-size: 1.5rem;
+}
+
+.who-we-are-btn{
+    display: inline-block;
+    margin-top: 5px;
+    padding: 6px;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    justify-content: end;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
+}
+.who-we-are-right-container{
+    margin-left: -250px;
+}
+
+.same-line{
+    display: flex;
+    gap: 0px;
+    align-items: center;
+}
+
+.same-line p {
+    display: inline-block;
+    margin: 5px;
+    padding: 5px;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    font-size: 20px;
+}
+
+.same-line h3 {
+    margin: 10px;
+    margin-bottom: 10px;
+    font-weight: 900;
+}
+
+
+/* OUR SERVI STYLING */
+.our-services-container{
+    text-align: center;
+    margin: 0px;
+    padding-top: 20px;
+    width: 100%;
+}
+
+.our-services-flex-container {
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    padding-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    width: 100%;    
+
+}
+
+.flex-item h3 {
+    font-weight: 800;
+}
+
+.flex-item p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.flex-item1 h3 {
+    font-weight: 800;
+    line-height: none;
+}
+
+.flex-item1 p {
+    color: black;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.flex-item {
+    background-color: #f7f7f7;
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+.flex-item1 {
+    background: linear-gradient(150deg, #FCDCD2, white);
+    height: 250px;
+    width: 250px;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+.our-services-btn {
+    display: inline-block;
+    margin-top: 10px;
+    margin-bottom: 100px;
+    padding: 10px;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    width: 72%;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease;
 }
 
 /* FOOTER STYLING */
 
-.footer {
+.footer{
     display: flex;
     text-align: center;
     justify-content: left;
     align-items: end;
     padding: 0px;
+    height: 250px;
     background: linear-gradient(175deg, #000066, #ff6633);
 }
+    
 
 .footer-column {
     color: white;
     padding: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: center;
+    
+}
+.footer-column1 {
+    color: white;
+    padding: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+}
+
+.footer-column2 {
+    color: white;
+    padding-left: 70px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: justify;
+    line-height: 1;
 }
 
 .footer-bottom {
     text-align: center;
+    font-size: 10px;
 }
 
 ul {
     list-style: none;
+    padding-left: 0px;
+    line-height: 1.5;
 }
 
 ul li a {
     color: white;
+    text-decoration: none;
+    
+}
+
+.footer-container {
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center; 
+    width: 80%; 
+    padding: 20px;
+    margin: -15px;
+    padding-left: 60px;
+    
+    
+}
+
+.footer-column h3 {
+    text-align: center;
 }
