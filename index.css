@@ -19,7 +19,7 @@ html {
     justify-content: left;
     align-items: end;
     padding: 5px;
-    width: 100%;
+    width: auto;
     background: linear-gradient(175deg, #000066, #ff6633);
     
 }
@@ -76,8 +76,9 @@ nav ul li a:hover {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    position: relative;
     height: 100vh;
-    width: 100%;
+    width: auto;
 }
 
 
@@ -89,8 +90,8 @@ nav ul li a:hover {
     justify-content: space-around; 
     align-items: center; 
     flex-wrap: wrap; 
-    padding: 80px;
-    width: 100%;
+    padding: 30px;
+    width: auto;
 }
 
 .who-we-are-container-content {
@@ -99,21 +100,22 @@ nav ul li a:hover {
     font-size: 1.5rem;
 }
 
-.who-we-are-right-container {
-    font-weight: 900;
-}
 .who-we-are-btn{
     display: inline-block;
-    margin-top: 10px;
-    padding: 8px;
+    margin-top: 5px;
+    padding: 6px;
     background-color: #ff6333; 
     color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 5px;
+    justify-content: end;
+    margin-left: auto;
     transition: background-color 0.3s ease;
 }
-
+.who-we-are-right-container{
+    margin-left: -250px;
+}
 
 .same-line{
     display: flex;
@@ -129,6 +131,9 @@ nav ul li a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    height: 20px;
+    width: 20px;
+    text-align: center;
     font-size: 20px;
 }
 
@@ -137,6 +142,8 @@ nav ul li a:hover {
     margin-bottom: 10px;
     font-weight: 900;
 }
+
+
 /* OUR SERVI STYLING */
 .our-services-container{
     text-align: center;
