@@ -1,10 +1,12 @@
+/* General styling */
 body {
     font-family: arial, sans-serif;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #f7f7f7;
+    background-color: white;
     color: #000066;
+    overflow-x: hidden;
 }
 
 html {
@@ -23,6 +25,7 @@ html {
     top: 0;
     right: 0;
     background: linear-gradient(175deg, #000066, #ff6633);
+    
 }
 
 /* LOGO STYLING */
@@ -41,6 +44,7 @@ html {
         align-items: center;
     }
 }
+
 
 /* NAVIGATION STYLING */
 
@@ -70,19 +74,41 @@ nav ul li a:hover {
     color: #000066;
 }
 
-/*privacy-policy*/
 
-.privacy-policy{
-    text-align: justify;
-    color: black;
-    margin: 10px;
+/* HERO STYLING */
+.contact-container {
+    padding: 50px;
+    background-image: url(images/hero-image.webp);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
+    height: 80vh;
+    width: auto;
 }
 
-.privacy-policy ul li {
-    list-style-type: circle;
-    margin: 10px;
-    margin-left: 50px;
+.contact-1-container {
+    margin-top: 10%;
+    font-family: Impact;
+    font-size: 6rem;
+    
 }
+
+.contact-2-container{
+    font-size: 0.9rem;
+}
+
+.contact-container p{
+    margin-top: -70px;
+    margin-bottom: -10px;
+}
+
+
+
+
+
+
+
 
 /* FOOTER STYLING */
 
@@ -121,7 +147,10 @@ nav ul li a:hover {
 
 .footer-bottom {
     text-align: center;
-    font-size: 10px;
+    padding: 15px;
+    font-size: 12px;
+    background-color: #F7F7F7;
+    height: 15px;
 }
 
 ul {

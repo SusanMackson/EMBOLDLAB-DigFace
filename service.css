@@ -7,14 +7,16 @@ body {
   }
   /* HEADER STYLING */
 .header {
-  height: 80px;
-  display: flex;
-  justify-content: left;
-  align-items: end;
-  padding: 5px;
-  width: auto;
-  background: linear-gradient(175deg, #000066, #ff6633);
-  
+  max-height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 5px;
+    width: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    background: linear-gradient(175deg, #000066, #ff6633);
 }
 
 /* LOGO STYLING */

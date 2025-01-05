@@ -6,6 +6,7 @@ body {
     height: 100vh;
     background-color: white;
     color: #000066;
+    overflow-x: hidden;
 }
 
 html {
@@ -14,12 +15,15 @@ html {
 
 /* HEADER STYLING */
 .header {
-    height: 80px;
+    max-height: 80px;
     display: flex;
     justify-content: left;
     align-items: end;
     padding: 5px;
     width: auto;
+    position: relative;
+    top: 0;
+    right: 0;
     background: linear-gradient(175deg, #000066, #ff6633);
     
 }
@@ -40,6 +44,7 @@ html {
         align-items: center;
     }
 }
+
 
 /* NAVIGATION STYLING */
 
@@ -70,7 +75,7 @@ nav ul li a:hover {
 }
 
 /* HERO STYLING */
-.hero-content-container {
+.hero-container {
     padding: 50px;
     background-image: url(images/hero-image.webp);
     background-size: cover;
@@ -79,6 +84,36 @@ nav ul li a:hover {
     position: relative;
     height: 100vh;
     width: auto;
+}
+
+.hero-1-container {
+    margin-top: 10%;
+    font-family: Impact;
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+}
+
+.hero-2-container{
+    font-size: 1.2rem;
+}
+.hero-content-container h5{
+    line-height: 0.5px;
+    margin-top: -40px;
+    margin-bottom: -10px;
+}
+
+.hero-btn{
+    display: inline-block;
+    padding: 20px;
+    font-size: 1.2rem;
+    background-color: #ff6333; 
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 0rem 5rem 5rem 0rem;
+    justify-content: end;
+    margin-left: auto;
+    transition: background-color 0.3s ease;
 }
 
 
@@ -108,7 +143,7 @@ nav ul li a:hover {
     color: white;
     text-decoration: none;
     font-weight: bold;
-    border-radius: 5px;
+    border-radius: 0rem 5rem 5rem 0rem;
     justify-content: end;
     margin-left: auto;
     transition: background-color 0.3s ease;
