@@ -75,9 +75,8 @@ body {
 .team {
   margin: 40px auto;
   text-align: center;
-  width: 100%;
-  background-color: #FFFF;
-  height: 325px;
+  width: auto;
+  
 }
 
 .team h2 {
@@ -94,16 +93,18 @@ body {
 
 .member {
   text-align: center;
-  padding: 10px;
+  padding: auto;
+  background-color: #F7F7F7;
 }
 
 .member img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 3px solid #FF6833;
+  
 }
-
+  
 .member h3 {
   font-size: 1.2rem;
   color: #000066;
@@ -156,8 +157,9 @@ body {
 .content-image {
   width: 45%;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px white
 }
+
 
 /* Services List Styling */
 .services-list {
@@ -181,7 +183,7 @@ body {
   width: 30px;
   height: 30px;
   background-color: #ff6833;
-  color: #fff;
+  color: #F7F7F7;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -197,4 +199,98 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   gap: 10px; /* Reduced gap between the image and list */
+}
+
+@media (max-width: 768px) {
+  .header-section {
+      padding: 40px 20px;
+  }
+
+  .header-section h1 {
+      font-size: 2.5rem;
+  }
+
+  .our-story h2,
+  .team h2,
+  .who-we-are h2 {
+      font-size: 1.5rem;
+  }
+
+  .story-content {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .story-content img {
+      width: 80%;
+  }
+
+  .team-members {
+      flex-direction: column;
+  }
+
+  .member img {
+      width: 120px;
+      height: 120px;
+  }
+
+  .who-we-are ul li {
+      width: 200px;
+  }
+
+  .content {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .content-image {
+      width: 80%;
+      margin-bottom: 20px;
+  }
+
+  .services-list li {
+      font-size: 14px;
+  }
+}
+
+/* For very small screens (Portrait mode Mobile devices) */
+@media (max-width: 480px) {
+  .header-section {
+      padding: 30px 10px;
+  }
+
+  .header-section h1 {
+      font-size: 2rem;
+  }
+
+  .story-text {
+      font-size: 0.9rem;
+  }
+
+  .team-members {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .member img {
+      width: 100px;
+      height: 100px;
+  }
+
+  .who-we-are ul li {
+      width: 100%;
+  }
+
+  .content {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .content-image {
+      width: 90%;
+  }
+
+  .services-list li {
+      font-size: 12px;
+  }
 }
