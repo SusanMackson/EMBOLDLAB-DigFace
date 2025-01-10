@@ -214,9 +214,8 @@ body {
 .team {
   margin: 40px auto;
   text-align: center;
-  width: 100%;
-  background-color: #FFFF;
-  height: 325px;
+  width: auto;
+  
 }
 
 .team h2 {
@@ -233,16 +232,18 @@ body {
 
 .member {
   text-align: center;
-  padding: 10px;
+  padding: auto;
+  background-color: #F7F7F7;
 }
 
 .member img {
-  width: 150px;
-  height: 150px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   border: 3px solid #FF6833;
+  
 }
-
+  
 .member h3 {
   font-size: 1.2rem;
   color: #000066;
@@ -295,8 +296,9 @@ body {
 .content-image {
   width: 45%;
   border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 6px white
 }
+
 
 /* Services List Styling */
 .services-list {
@@ -320,7 +322,7 @@ body {
   width: 30px;
   height: 30px;
   background-color: #ff6833;
-  color: #fff;
+  color: #F7F7F7;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
@@ -336,97 +338,4 @@ body {
   max-width: 1000px;
   margin: 0 auto;
   gap: 10px; /* Reduced gap between the image and list */
-}
-
-/* FOOTER STYLING */
-@media (max-width: 768px) {
-  .footer {
-      flex-direction: column;
-      height: auto;
-      text-align: center;
-      padding: 20px;
-  }
-
-  .footer-container {
-      flex-direction: column;
-      align-items: center;
-  }
-
-  .footer-column,
-  .footer-column1,
-  .footer-column2 {
-      padding: 10px;
-      text-align: center;
-  }
-}
-
-
-.footer{
-  display: flex;
-  flex-wrap: wrap;
-  text-align: center;
-  justify-content: left;
-  align-items: end;
-  padding: 0px;
-  min-height: auto;
-  background: linear-gradient(175deg, #000066, #ff6633);
-}
-  
-
-.footer-column {
-  color: white;
-  padding: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: center;
-  
-}
-.footer-column1 {
-  color: white;
-  padding: 10px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: justify;
-}
-
-.footer-column2 {
-  color: white;
-  padding-left: 20px;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  text-align: justify;
-  line-height: 1;
-}
-
-.footer-bottom {
-  text-align: center;
-  padding: 15px;
-  font-size: 12px;
-  background-color: #F7F7F7;
-  height: 15px;
-}
-
-ul {
-  list-style: none;
-  padding-left: 0px;
-  line-height: 1.5;
-}
-
-ul li a {
-  color: white;
-  text-decoration: none;
-  
-}
-
-.footer-container {
-  display: flex; 
-  justify-content: space-between; 
-  align-items: center; 
-  width: 80%; 
-  padding: 10px;
-  margin: -15px;
-  padding-left: 60px;
-  
-  
-}
-
-.footer-column h3 {
-  text-align: center;
 }
