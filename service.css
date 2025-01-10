@@ -1,67 +1,140 @@
-/* General Styles */
+/* General styling */
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  /* HEADER STYLING */
+  font-family: arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white;
+  color: #000066;
+  overflow-x: hidden;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* HEADER STYLING */
 .header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
   max-height: 80px;
-    display: flex;
-    justify-content: left;
-    align-items: end;
-    padding: 5px;
-    width: auto;
-    position: relative;
-    top: 0;
-    right: 0;
-    background: linear-gradient(175deg, #000066, #ff6633);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+  background: linear-gradient(175deg, #000066, #ff6633);
+  
 }
 
 /* LOGO STYLING */
 .logo {
-  height: 170px;
-  padding-bottom: 20px;
-  margin: -15px;
-  padding-left: 60px;
-  margin-bottom: -65px;
-
-}
-
-@media screen and (max-width: 768px) {
-  .header {
-      flex-direction: column;
-      align-items: center;
-  }
+  height: 100px;
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
 }
 
 /* NAVIGATION STYLING */
 
 nav ul {
   display: flex;
-  justify-content: end;
+  justify-content: center;
   list-style: none;
-  gap: 35px;
-  padding: 18px;
-  margin-left: 200px;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+  margin-right: 3rem;
 }
 
-nav {
-  padding-left: 35%;
-  
-}
 nav ul li a {
   text-decoration: none;
   color: white;
-  transition: color 0.3 ease;
-  font-size: 1rem;
+  font-size: 1.1rem;
   font-family: 'Calibri';
   font-weight: 700;
+  
 }
 
 nav ul li a:hover {
   color: #000066;
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav.active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+  }
+
+  nav.active ul {
+      display: flex;
+  }
+
+  .logo {
+      height: 80px;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .logo {
+      height: 80px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+  }
+}
+
+/* HAMBURGER MENU (Optional for Smaller Screens) */
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+  }
+
+  .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: white;
+  }
+
+  nav.active ul {
+      display: flex;
+      flex-direction: column;
+  }
 }
 
   /* Services Section */
@@ -334,35 +407,57 @@ nav ul li a:hover {
   }
 
 /* FOOTER STYLING */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column,
+  .footer-column1,
+  .footer-column2 {
+      padding: 10px;
+      text-align: center;
+  }
+}
+
 
 .footer{
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: left;
   align-items: end;
   padding: 0px;
-  height: 250px;
+  min-height: auto;
   background: linear-gradient(175deg, #000066, #ff6633);
 }
   
 
 .footer-column {
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   
 }
 .footer-column1 {
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: justify;
 }
 
 .footer-column2 {
   color: white;
-  padding-left: 70px;
+  padding-left: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: justify;
   line-height: 1;
@@ -393,7 +488,7 @@ ul li a {
   justify-content: space-between; 
   align-items: center; 
   width: 80%; 
-  padding: 20px;
+  padding: 10px;
   margin: -15px;
   padding-left: 60px;
   
