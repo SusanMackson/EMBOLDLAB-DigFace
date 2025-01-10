@@ -1,54 +1,63 @@
-/* General Styles */
+/* General styling */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-  
-/* Header Styling */
-header {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 10px 5%;
-  background: linear-gradient(175deg, #ff6833 , #000066 );
-  color: white;
-  flex-wrap: wrap;
-  
+  }
+  /* HEADER STYLING */
+.header {
+  max-height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 5px;
+    width: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    background: linear-gradient(175deg, #000066, #ff6633);
 }
 
 /* Logo Section */
 .logo {
-  height: 110px; /* Adjust logo height */
-  max-width: 110px;
+  height: 170px;
+  padding-bottom: 20px;
+  margin: -15px;
+  padding-left: 60px;
+  margin-bottom: -65px;
 
 }
 
-/* Navigation Section */
-nav{
-  flex: 1;
-  text-align: right;
-
+@media screen and (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+  }
 }
+
+/* NAVIGATION STYLING */
+
 nav ul {
-  list-style: none;
   display: flex;
-  gap: 20px;
-  justify-content: flex-end;
+  justify-content: end;
+  list-style: none;
+  gap: 35px;
+  padding: 18px;
+  margin-left: 200px;
 }
 
-nav ul li {
-  display: inline-block;
-  font-family: Arial, sans-serif;
+nav {
+  padding-left: 35%;
+  
 }
-
 nav ul li a {
   text-decoration: none;
   color: white;
+  transition: color 0.3 ease;
   font-size: 1rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
+  font-family: 'Calibri';
+  font-weight: 700;
 }
 
 nav ul li a:hover {
@@ -72,6 +81,78 @@ nav ul li a:hover {
 
   .logo {
     margin-bottom: 10px;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav.active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+  }
+
+  nav.active ul {
+      display: flex;
+  }
+
+  .logo {
+      height: 80px;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .logo {
+      height: 80px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+  }
+}
+
+/* HAMBURGER MENU (Optional for Smaller Screens) */
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+  }
+
+  .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: white;
+  }
+
+  nav.active ul {
+      display: flex;
+      flex-direction: column;
   }
 }
 
@@ -345,35 +426,57 @@ nav ul li a:hover {
   }
 
 /* FOOTER STYLING */
+@media (max-width: 768px) {
+  .footer {
+      flex-direction: column;
+      height: auto;
+      text-align: center;
+      padding: 20px;
+  }
+
+  .footer-container {
+      flex-direction: column;
+      align-items: center;
+  }
+
+  .footer-column,
+  .footer-column1,
+  .footer-column2 {
+      padding: 10px;
+      text-align: center;
+  }
+}
+
 
 .footer{
   display: flex;
+  flex-wrap: wrap;
   text-align: center;
   justify-content: left;
   align-items: end;
   padding: 0px;
-  height: 250px;
+  min-height: auto;
   background: linear-gradient(175deg, #000066, #ff6633);
 }
   
 
 .footer-column {
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: center;
   
 }
 .footer-column1 {
   color: white;
-  padding: 20px;
+  padding: 10px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: justify;
 }
 
 .footer-column2 {
   color: white;
-  padding-left: 70px;
+  padding-left: 20px;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   text-align: justify;
   line-height: 1;
@@ -404,7 +507,7 @@ ul li a {
   justify-content: space-between; 
   align-items: center; 
   width: 80%; 
-  padding: 20px;
+  padding: 10px;
   margin: -15px;
   padding-left: 60px;
   
