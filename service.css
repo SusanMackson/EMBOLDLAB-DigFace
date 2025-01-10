@@ -1,5 +1,155 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  /* HEADER STYLING */
+.header {
+  max-height: 80px;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    padding: 5px;
+    width: auto;
+    position: relative;
+    top: 0;
+    right: 0;
+    background: linear-gradient(175deg, #000066, #ff6633);
+}
+
+/* Logo Section */
+.logo {
+  height: 170px;
+  padding-bottom: 20px;
+  margin: -15px;
+  padding-left: 60px;
+  margin-bottom: -65px;
+
+}
 
 
+
+/* NAVIGATION STYLING */
+
+nav ul {
+  display: flex;
+  justify-content: end;
+  list-style: none;
+  gap: 35px;
+  padding: 18px;
+  margin-left: 200px;
+}
+
+nav {
+  padding-left: 35%;
+  
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.3 ease;
+  font-size: 1rem;
+  font-family: 'Calibri';
+  font-weight: 700;
+}
+
+nav ul li a:hover {
+  color: #ffcc00;
+}
+
+/* Responsive Styles */
+@media(max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+    
+  }
+
+  .logo {
+    margin-bottom: 10px;
+  }
+}
+
+.menu-icon {
+  display: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+}
+
+nav.active ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .menu-icon {
+      display: block;
+  }
+
+  nav ul {
+      display: none;
+  }
+
+  nav.active ul {
+      display: flex;
+  }
+
+  .logo {
+      height: 80px;
+  }
+}
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      align-items: center;
+      padding: 10px;
+  }
+
+  .logo {
+      height: 80px;
+  }
+
+  nav ul {
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      margin: 10px 0;
+  }
+}
+
+/* HAMBURGER MENU (Optional for Smaller Screens) */
+
+@media (max-width: 768px) {
+  nav ul {
+      display: none;
+  }
+
+  .menu-icon {
+      display: block;
+      cursor: pointer;
+      font-size: 1.5rem;
+      color: white;
+  }
+
+  nav.active ul {
+      display: flex;
+      flex-direction: column;
+  }
+}
 
 /* Services Section */
 .service-image{
