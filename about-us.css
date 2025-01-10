@@ -290,7 +290,7 @@ body {
       width: 90%;
   }
 
-  .services-list l {
+  .services-list li {
       font-size: 12px;
   }
 }
