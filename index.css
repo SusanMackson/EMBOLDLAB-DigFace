@@ -78,45 +78,6 @@ nav.active ul {
     align-items: center;
 }
 
-@media (max-width: 768px) {
-    .menu-icon {
-        display: block;
-    }
-
-    nav ul {
-        display: none;
-    }
-
-    nav.active ul {
-        display: flex;
-    }
-
-    .logo {
-        height: 80px;
-    }
-}
-
-/* RESPONSIVE DESIGN */
-
-@media (max-width: 768px) {
-    .header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
-    .logo {
-        height: 80px;
-    }
-
-    nav ul {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        margin: 10px 0;
-    }
-}
-
 /* HAMBURGER MENU (Optional for Smaller Screens) */
 
 @media (max-width: 768px) {
@@ -138,50 +99,35 @@ nav.active ul {
 }
 
 /* HERO STYLING */
-@media (max-width: 768px) {
-    .hero-container {
-        padding: 20px;
-        height: auto;
-    }
-
-    .hero-1-container {
-        font-size: 2rem;
-        line-height: 2.5rem;
-    }
-
-    .hero-btn {
-        padding: 15px;
-        font-size: 1rem;
-    }
-}
 
 
-.hero-container {
+.hero-overlay {
     justify-content: center;
     align-items: end;
-    padding: 90px;
-    background-image: url(images/hero-image.webp);
     text-align: left;
-    min-height: 100vh;
-    background-size: cover;
-    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    width: auto;
+    margin: 4%;
+}
+.hero-image{
+    background-image: url(images/hero-image.webp);
+    height: 500px;
+    width: 100%;
     background-position: center;
     position: relative;
-    height: 100vh;
-    width: auto;
 }
-
 .hero-1-container {
-    margin-top: 10%;
-    font-family: Impact;
-    font-size: 3.5rem;
+    margin-top: 20%; font-family: Impact;
+    font-size: 3rem;
     line-height: 3.5rem;
 }
 
 .hero-2-container{
     font-size: 1.2rem;
 }
-.hero-content-container h5{
+.hero-overlay h5{
     line-height: 0.5px;
     margin-top: -40px;
     margin-bottom: -10px;
@@ -204,16 +150,7 @@ nav.active ul {
 
 
 /*WHO WE ARE STYLING*/
-@media (max-width: 768px) {
-    .who-we-are-container {
-        flex-direction: column;
-        padding: 20px;
-    }
 
-    .who-we-are-right-container {
-        margin-left: 0;
-    }
-}
 
 .who-we-are-container {
     background-color: #f7f7f7;
@@ -276,20 +213,6 @@ nav.active ul {
 
 
 /* OUR SERVI STYLING */
-@media (max-width: 768px) {
-    .our-services-flex-container{
-        flex-direction: column;
-    }
-
-    .flex-item, .flex-item1 {
-        width: 80%;
-        margin: 10px 0;
-    }
-
-    .our-services-btn {
-        width: 90%;
-    }
-}
 
 .our-services-container{
     text-align: center;
@@ -364,27 +287,15 @@ nav.active ul {
     transition: background-color 0.3s ease;
 }
 
-/* FOOTER STYLING */
+/* Responsive Design */
 @media (max-width: 768px) {
-    .footer {
-        flex-direction: column;
-        height: auto;
-        text-align: center;
-        padding: 20px;
+    .our-services {
+      flex-direction: column;
+      align-items: center;
     }
+  }
 
-    .footer-container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .footer-column,
-    .footer-column1,
-    .footer-column2 {
-        padding: 10px;
-        text-align: center;
-    }
-}
+/* FOOTER STYLING */
 
 
 .footer{
